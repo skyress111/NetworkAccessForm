@@ -1,10 +1,406 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Request page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form >    
+    <!-- the titele User information code -->
+    <div data-role="control" data-type="form-header" data-hash="00000002" data-type-id="27" data-colspan="20" id="form-heading-00000002-acc" aria-labelledby="form-heading-00000002-acc" data-i18n-html="Headline">
+        <h1>Network Access Request Form</h1>
+        User Information:-
+    </div>
+    <!-- text username:, name,first and last. -->
+    <fieldset>
+        <div class="container">
+            <small id="TitleNameHelpInline" class="text-muted">
+                Name:
+            </small>
+            <div class="d-flex bd-highlight">
+                <div class="p-2 flex-fill bd-highlight">
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                           autofocus required>
+
+                </div>
+                <div class="p-2 flex-fill bd-highlight">
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+            <!-- text location:, city,street,building. -->
+            <div class="container">
+                <small id="TitleLocantionHelpInline" class="text-muted">
+                    Location:
+                </small>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-fill bd-highlight">
+                        <input type="text" class="form-control" placeholder="City" id="city"  aria-label="City" aria-describedby="basic-addon1"
+                               required>
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <input type="text" class="form-control" placeholder="Street" id="street"  aria-label="Street" aria-describedby="basic-addon1"
+                               required>
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <input type="text" class="form-control" placeholder="Building" id="building" aria-label="Building" aria-describedby="basic-addon1"
+                               required>
+                    </div>
+                </div>
+            </div>
+            <!--Work Information:, -->
+            <div class="container">
+
+                <div class="d-flex bd-highlight">
+                    <div class="col-3">
+                        <small id="WorkInformationHelpInline" class="text-muted">
+                            Work Information:
+                        </small>
+                    </div>
+                    <!--empty spot for text-->
+                    <div class="p-2 flex-fill bd-highlight">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <small id="passwordHelpInline" class="text-muted">
+
+                        </small>
+                    </div>
+                    <small id="passwordHelpInline" class="text-muted">
+
+                    </small>
+
+                </div>
+
+
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-fill bd-highlight">
+                        <input type="text" class="form-control" placeholder="Employee no." id="employeeN" aria-label="employee no." aria-describedby="basic-addon1"
+                               required>
+                    </div>
+                    <!--space for input-->
+                    <div class="p-2 flex-fill bd-highlight">
+
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <input type="text" class="form-control" placeholder="Department" id="department" aria-label="Department" aria-describedby="basic-addon1"
+                               required>
+                    </div>
+                </div>
+                <!--2nd row input -->
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-fill bd-highlight">
+                        <input type="text" class="form-control" placeholder="Title job" aria-label="Titlejob" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <input type="tel" class="form-control" placeholder="Phone no./Extn" id="phone" aria-label="Phone" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+            <!--User name(IT):-->
+            <div class="container">
+                <small id="UserNameHelpInline" class="text-muted">
+                    User Name (IT):
+                </small>
+                <div class="d-flex p-2 bd-highlight">
+                    <input type="text" class="form-control" placeholder="First Name + First Letter Last Name" id="userN" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <!--request reason/check box:-->
+            <div class="container">
+                <small id="requestHelpInline" class="text-muted">
+                    Reason for request:
+                </small>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-fill bd-highlight">
+                        <label data-role="choice" id="radio-0000000d0">
+                            <input type="radio" id="0000000d_0" name="c_0000000d" value="Yes" data-index="0" data-role="i123-input">
+                            <label data-role="radio" for="0000000d_0" aria-labelledby="radio-0000000d0" role="radio">
+                            </label>
+                            <span data-role="option-text" data-i18n-html="control_label_52092123_choice_0" data-skip-markdown="true">
+                                New Hire
+                            </span>
+                        </label>
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <label data-role="choice" id="radio-0000000d0">
+                            <input type="radio" id="0000000d_0" name="c_0000000d" value="Yes" data-index="0" data-role="i123-input">
+                            <label data-role="radio" for="0000000d_0" aria-labelledby="radio-0000000d0" role="radio">
+                            </label>
+                            <span data-role="option-text" data-i18n-html="control_label_52092123_choice_0" data-skip-markdown="true">
+                                Termination
+                            </span>
+                        </label>
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <label data-role="choice" id="radio-0000000d0">
+                            <input type="radio" id="0000000d_0" name="c_0000000d" value="Yes" data-index="0" data-role="i123-input">
+                            <label data-role="radio" for="0000000d_0" aria-labelledby="radio-0000000d0" role="radio">
+                            </label>
+                            <span data-role="option-text" data-i18n-html="control_label_52092123_choice_0" data-skip-markdown="true">
+                                Change of Job Dudies
+                            </span>
+                        </label>
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <label data-role="choice" id="radio-0000000d0">
+                            <input type="radio" id="0000000d_0" name="c_0000000d" value="Yes" data-index="0" data-role="i123-input">
+                            <label data-role="radio" for="0000000d_0" aria-labelledby="radio-0000000d0" role="radio">
+                            </label>
+                            <span data-role="option-text" data-i18n-html="control_label_52092123_choice_0" data-skip-markdown="true">
+                                Trannsfer Between Departement
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-fill bd-highlight">
+
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="radio" aria-label="Radio button for following text input">
+                                    Others
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input">
+                        </div>
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="radio" aria-label="Radio button for following text input">
+                                    Temporary/Expire date:
+                                </div>
+                            </div>
+                            <input type="date" class="form-control" aria-label="Text input with radio button">
+                        </div>
+                        <small id="passwordHelpInline" class="text-muted">
+                            when "Temporaty" is selected an "Exprie date" has to be entred.
+                        </small>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--header of required applications-->
+            <p class="text-center">
+                <h4 class="text-center">Required Applications and Information System Services</h4>
+            </p>
+
+            <!--required application table-->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">Access </th>
+                        <th scope="col">Description of Requirement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"> </th>
+                        <td>
+                            Standard Microsoft Office  Application
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            Email
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            SAP Client
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            Financial (Cognos)
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            Outlook Web Access (Email)
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            Internet Access
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            VAP Access (IMust have business latop)
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            Other Applications
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <!--Authorization access approvals-->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Authorization Access Approvals</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Requested by: <input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                        <td>Phone Number: <input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"> </td>
+                        <td>Date: <input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            Departmental head Signature:
+                        </td>
+                        <td>Departmental head Name:</td>
+                        <td>Date: <input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>HR Personal & admin. Signature: </td>
+                        <td>HR Name: </td>
+                        <td>Date: <input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>System Admin Signature: </td>
+                        <td>System Admin Name: </td>
+                        <td>Date: <input type="text" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1"></td>
+
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+            <!--note box-->
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Notes: </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <!--submit button-->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary mb-2">Submit Form</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+
+                (function () {
+                    'use strict';
+                    window.addEventListener('load', function () {
+
+                        var forms = document.getElementsByClassName('needs-validation');
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+
+
+</form>
+
+
+
